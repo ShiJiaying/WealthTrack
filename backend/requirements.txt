@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+pydantic
+httpx
+feedparser
+beautifulsoup4
+apscheduler
+python-dotenv
+sqlalchemy
+aiosqlite

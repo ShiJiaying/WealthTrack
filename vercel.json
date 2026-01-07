@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "backend/main.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "backend/main.py"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "backend/main.py"
+    }
+  ],
+  "env": {
+    "DEEPSEEK_API_KEY": "@deepseek_api_key",
+    "DEEPSEEK_API_URL": "https://api.deepseek.com/v1/chat/completions"
+  }
+}
